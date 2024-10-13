@@ -3,6 +3,7 @@
 #include <locale.h> //biblioteca de locações de texto por região
 #include <string.h> //biblioteca responsável por cuidar das string
 
+    
 int registro()//Função responsavel por cadastra usuários no sistema
 {
 	//Inicio de criaçaõ de variáveis/string
@@ -62,6 +63,41 @@ int registro()//Função responsavel por cadastra usuários no sistema
     
     system("pause");//Comando para pausa o sistama
 }
+int escolharegistro()
+{
+	//Definindo variáveis
+	int opcao=0;
+	int laco=1;
+	//Fim das definições de variávis
+	
+	for(laco=1;laco=1;)//Função de repetição
+	{
+		system("cls");//responsavel por limpar a tela
+		
+		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("\t1 - sim\n");
+        printf("\t2 - não\n\n");
+        printf("Opção: ");//Fim da opção
+        
+        scanf("%d", &opcao);//Armazenando a escolha do usuário
+        system("cls");//Limpando opções
+        switch(opcao)//Inicio de seleção do menu
+		{
+			case 1:
+			registro();//chamada de funções
+			break;
+			
+			case 2:
+			return 0;//Retorna ao inico do progama
+			break;
+			
+			default:
+			printf("Essa escolha não está disponivel!\n");//informando o usuário
+			system("pause");//Comando para pausa o sistama
+			break;//Fim de seleção	
+	    }
+    }
+}
 
 int consulta()//Função responsavel por consilta os dados do usuários no sistema
 {
@@ -93,6 +129,41 @@ int consulta()//Função responsavel por consilta os dados do usuários no sistema
 	fclose(file);//Fechando arquivo
 	system("pause");//Comando para pausa o sistama
 }
+int escolhaconsulta()
+{
+	//Definindo variáveis
+	int opcao=0;
+	int laco=1;
+	//Fim das definições de variávis
+	
+	for(laco=1;laco=1;)//Função de repetição
+	{
+		system("cls");//responsavel por limpar a tela
+		
+		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("\t1 - sim\n");
+        printf("\t2 - não\n\n");
+        printf("Opção: ");//Fim da opção
+        
+        scanf("%d", &opcao);//Armazenando a escolha do usuário
+        system("cls");//Limpando opções
+        switch(opcao)//Inicio de seleção do menu
+		{
+			case 1:
+			consulta();//chamada de funções
+			break;
+			
+			case 2:
+			return 0;//Retorna ao inico do progama
+			break;
+			
+			default:
+			printf("Essa escolha não está disponivel!\n");//informando o usuário
+			system("pause");//Comando para pausa o sistama
+			break;//Fim de seleção	
+	    }
+    }
+}
 
 int deletar()//Função responsavel por deleta os dados do usuários do sistema
 {
@@ -117,6 +188,41 @@ int deletar()//Função responsavel por deleta os dados do usuários do sistema
     	system("pause");//Comando para pausa o sistama
 	}
 }
+int escolhadeletar() //Opção de escolha para retorna ao menu
+{
+	//Definindo variáveis
+	int opcao=0;
+	int laco=1;
+	//Fim das definições de variávis
+	
+	for(laco=1;laco=1;)//Função de repetição
+	{
+		system("cls");//responsavel por limpar a tela
+		
+		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("\t1 - sim\n");
+        printf("\t2 - não\n\n");
+        printf("Opção: ");//Fim da opção
+        
+        scanf("%d", &opcao);//Armazenando a escolha do usuário
+        system("cls");//Limpando opções
+        switch(opcao)//Inicio de seleção do menu
+		{
+			case 1:
+			deletar();//chamada de funções
+			break;
+			
+			case 2:
+			return 0;//Retorna ao inico do progama
+			break;
+			
+			default:
+			printf("Essa escolha não está disponivel!\n");//informando o usuário
+			system("pause");//Comando para pausa o sistama
+			break;//Fim de seleção	
+	    }
+    }
+}
 
 int main ()
 {
@@ -125,7 +231,7 @@ int main ()
 	int laco=1;
 	//Fim das definições de variávis
 	
-	for(laco=1;laco=1;)
+	for(laco=1;laco=1;)//Função de repetição
 	{
 		system("cls");//responsavel por limpar a tela
 		
@@ -146,15 +252,15 @@ int main ()
 		switch(opcao)//Inicio de seleção do menu
 		{
 			case 1:
-			registro();//chamada de finções
+			escolharegistro();//chamada de funções
 			break;
 			
 			case 2:
-			consulta();//chamada de finções
+			escolhaconsulta();//chamada de funções
 			break;
 			
 			case 3:
-			deletar();//chamada de finções
+			escolhadeletar();//chamada de funções
 			break;
 			
 			default:
