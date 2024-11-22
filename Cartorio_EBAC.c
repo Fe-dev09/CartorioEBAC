@@ -74,7 +74,7 @@ int escolharegistro()
 	{
 		system("cls");//responsavel por limpar a tela
 		
-		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("Deseja continuar o Registro?\n\n");//Opções de escolhas
 		printf("\t1 - sim\n");
         printf("\t2 - não\n\n");
         printf("Opção: ");//Fim da opção
@@ -140,7 +140,7 @@ int escolhaconsulta()
 	{
 		system("cls");//responsavel por limpar a tela
 		
-		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("Deseja continuar a Consulta?\n\n");//Opções de escolhas
 		printf("\t1 - sim\n");
         printf("\t2 - não\n\n");
         printf("Opção: ");//Fim da opção
@@ -199,7 +199,7 @@ int escolhadeletar() //Opção de escolha para retorna ao menu
 	{
 		system("cls");//responsavel por limpar a tela
 		
-		printf("Deseja continuar?\n\n");//Opções de escolhas
+		printf("Deseja continuar a Exclusão?\n\n");//Opções de escolhas
 		printf("\t1 - sim\n");
         printf("\t2 - não\n\n");
         printf("Opção: ");//Fim da opção
